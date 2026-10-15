@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f1ee;
+    color:#4d3b2f;
+    font-family:'Montserrat', sans-serif;
+    overflow-x:hidden;
+}
+
+/* ================= PROMISE BOTTOM ================= */
+.ark-promise-bottom-section{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background: #f0e5e7;
+}
+
+.ark-promise-bottom-benefits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ark-promise-bottom-box{
+    text-align: center;
+    padding: 24px 14px;
+    border-right: 1px solid #bfb5ab;
+}
+
+.ark-promise-bottom-box:last-child{
+    border-right: none;
+}
+
+.ark-promise-bottom-box i{
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    color: #4b3528;
+    margin-bottom: 16px;
+}
+
+.ark-promise-bottom-box h3{
+    font-size: clamp(.7rem, 1vw, 1.15rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #8a5a18;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.ark-promise-bottom-box p{
+    font-size: clamp(.58rem, .85vw, .92rem);
+    line-height: 1.6;
+    color: #4d3b2f;
+}
+
+/* =================== RESPONSIVE ================== */
+@media (max-width: 1100px){
+    .ark-promise-bottom-box{
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 850px){
+    .ark-promise-bottom-box{
+        padding: 16px 8px;
+    }
+}
+
+@media (max-width: 650px){
+    .ark-promise-bottom-box{
+        padding: 14px 6px;
+    }
+}
+
+@media (max-width: 600px){
+    .ark-promise-bottom-benefits{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ark-promise-bottom-box{
+        padding: 18px 10px;
+        border-right: 1px solid #bfb5ab;
+        border-bottom: 1px solid #bfb5ab;
+    }
+
+    .ark-promise-bottom-box:nth-child(2),
+    .ark-promise-bottom-box:nth-child(4){
+        border-right: none;
+    }
+
+    .ark-promise-bottom-box:nth-child(3),
+    .ark-promise-bottom-box:nth-child(4){
+        border-bottom: none;
+    }
+
+    .ark-promise-bottom-box i{
+        font-size: 2rem;
+    }
+
+    .ark-promise-bottom-box h3{
+        font-size: .82rem;
+        white-space: normal;
+    }
+
+    .ark-promise-bottom-box p{
+        font-size: .72rem;
+        line-height: 1.5;
+    }
+}

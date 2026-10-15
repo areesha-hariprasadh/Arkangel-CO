@@ -1,0 +1,52 @@
+/* ================= FOOTER THANK YOU ================= */
+.footer-section {
+    background-color: #4d3b2f;
+    padding: 20px 40px;
+    text-align: center;
+}
+ 
+.footer-section p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+ 
+.footer-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+ 
+.footer-divider hr {
+    width: 80px;
+    border: none;
+    border-top: 1px solid #9a7a60;
+}
+ 
+.footer-divider i {
+    color: #fff;
+    font-size: 1.1rem;
+}
+ 
+@media (max-width: 900px) {
+    .promise-container {
+        flex-direction: column;
+    }
+    
+    .promise-right {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .footer-section p {
+        font-size: 1rem;
+    }
+}
